@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+				// task 1
+		
+			function culc() {
+
+				var index = 0;
+			
+				return function(num) {
+					return index += num
+				}
+
+			
+			};
+
+			var res = culc();
+
+			console.log(res(3));
+			console.log(res(5));
+			console.log(res(20));
+			
+
+			
+			// task 2
+
+			function sum(step, startValue) {
+				
+				var index = startValue;
+				
+				return function() {
+
+
+					return index += step;
+
+					
+				};
+			};
+			
+			var res = sum(3,7);
+
+			console.log(res());
+			console.log(res());
+			console.log(res());
+			console.log(res());
+
+		</script>
+		
+	</body>
+</html>
